@@ -1,0 +1,19 @@
+<h1>Zoek resultaat</h1>
+
+<ul class="listing">
+  {{#Objects}}
+    <li>
+      <a href="#" data-id="{{Id}}">
+        <img src="{{FotoMedium}}" alt="">
+        <p class="listing__address">
+          <span>{{Adres}}</span>
+          <span>{{Woonplaats}}</span>
+        </p>
+      </a>
+      <span class="listing__surface">{{Woonoppervlakte}} m<sup>2</sup></span>
+      <span>Prijs: &euro; {{Koopprijs}} {{Prijs.KoopAbbreviation}}</span>
+      <!-- <span>{{Soort-aanbod}}</span>
+      <span>Kamers: {{AantalKamers}}</span> -->
+    </li>
+  {{/Objects}}
+</ul>

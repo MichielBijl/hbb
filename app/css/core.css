@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Header */
+header {
+  background: #f7a100;
+}
+
+header [rel="home"] {
+  padding: .5rem 0;
+}
+
+header a > img {
+  display: block;
+  height: 40px;
+}
+
+header .cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+header nav,
+header nav ul,
+header nav li,
+header nav a {
+  display: flex;
+}
+
+header nav a {
+  padding: .5rem 1.5rem;
+  align-items: center;
+  border: solid #DE9000;
+  border-width: 0 1px;
+  color: #52241D;
+  text-decoration: none;
+}
+
+header nav a:focus,
+header nav a:hover {
+  background: #DE9000;
+}
+
+header nav li + li a {
+  border-left: 0;
+}
+
+/* Footer */
+footer {
+  padding: .5rem 0;
+  background: #ededed;
+}
+
+footer .cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer nav ul {
+  display: flex;
+}
+
+footer nav li + li {
+  margin-left: .5rem;
+  padding-left: .5rem;
+  border-left: 1px solid #333;
+}
+
+/* Container */
+.cont {
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 90vw;
+  max-width: 60rem;
+}
+
+/* Navigation */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Listing */
+/* Lists houses */
+.listing {
+  list-style: none;
+}
+
+.listing::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.listing li {
+  float: left;
+  border-radius: .3rem;
+  overflow: hidden;
+}
+
+.listing a {
+  display: block;
+  padding: .5rem;
+  text-decoration: none;
+}
+
+.listing img {
+  margin: -.5rem -.5rem .5rem;
+}
+
+.listing p {
+  margin: 0;
+}
+
+.listing__surface {
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: .8em;
+  background: #52241D;
+}
+
+.listing p span:nth-child(1) {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.listing p span:nth-child(2) {
+
+}

@@ -1,0 +1,6 @@
+<h1>{{Adres}}</h1>
+<p>{{VolledigeOmschrijving}}</p>
+
+{{#Media-Foto}}
+<img src="{{.}}" alt="">
+{{/Media-Foto}}
