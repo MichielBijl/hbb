@@ -334,21 +334,21 @@ h1 {
   font-size: 1.1rem;
 }
 
-.object-agency {
+.agency {
 
 }
 
-.object-agency h2 {
+.agency h2 {
   font-size: 1.2em;
   font-weight: 600;
 }
 
-.object-logo {
+.agency-logo {
   float: left;
   margin-right: 1em;
 }
 
-.object-logo img {
+.agency-logo img {
   width: 50px;
 }
 
@@ -438,7 +438,7 @@ h1 {
     width: calc(70% - 1em);
   }
 
-  .object-agency {
+  .agency {
     float: right;
     width: 30%;
   }
@@ -458,7 +458,7 @@ h1 {
       grid-column-gap: 1rem;
     }
 
-    .object-agency,
+    .agency,
     .object-details {
       float: none;
       width: auto;

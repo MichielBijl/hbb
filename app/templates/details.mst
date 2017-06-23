@@ -29,9 +29,9 @@
     </section>
   </main>
 
-  <aside id="aside" class="object-agency">
+  <aside id="aside" class="agency">
     <h2>Makelaar</h2>
-    <div class="object-logo">
+    <div class="agency-logo">
       <img src="images/environmental_company.svg" alt="{{Makelaar}} logo">
     </div>
     <p>{{Makelaar}}</p>
