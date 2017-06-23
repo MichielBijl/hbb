@@ -1,6 +1,40 @@
-<h1>{{Adres}}</h1>
-<p>{{VolledigeOmschrijving}}</p>
+<div class="grid">
+  <main id="main" class="object-details">
+    <img src="{{HoofdFoto}}" alt="" class="object-photo">
 
-{{#Media-Foto}}
-<img src="{{.}}" alt="">
-{{/Media-Foto}}
+    <header class="object-header">
+      <h1 class="object-title">{{Adres}}</h1>
+      <p class="object-city">{{Plaats}}</p>
+      <p class="object-price">&euro; {{Prijs.Koopprijs}} {{Prijs.KoopAbbreviation}}</p>
+    </header>
+
+    <section class="description">
+      <h2>Omschrijving</h2>
+      <div class="description-clip">
+        <div class="description-content">
+          <p>{{VolledigeOmschrijving}}</p>
+        </div>
+        <button id="toggle-description">Lees volledige omschrijving</button>
+      </div>
+    </section>
+
+    <section aria-label="Informatie" class="object-information">
+      <ul>
+        <li>Kamers <span>{{AantalKamers}}</span></li>
+        <li>Badkamers <span>{{AantalBadkamers}}</span></li>
+        <li>Bouwjaar <span>{{Bouwjaar}}</span></li>
+        <li>Inhoud <span>{{Inhoud}} m<sup>3</sup></span></li>
+        <li>Oppervlakte <span>{{WoonOppervlakte}} m<sup>2</sup></span></li>
+      </ul>
+    </section>
+  </main>
+
+  <aside id="aside" class="object-agency">
+    <h2>Makelaar</h2>
+    <div class="object-logo">
+      <img src="images/environmental_company.svg" alt="{{Makelaar}} logo">
+    </div>
+    <p>{{Makelaar}}</p>
+    <p>Telefoon: <a href="tel:{{MakelaarTelefoon}}">{{MakelaarTelefoon}}</a></p>
+  </aside>
+</div>

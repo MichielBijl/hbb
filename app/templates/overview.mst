@@ -1,19 +1,25 @@
-<h1>Zoek resultaat</h1>
+<main id="main">
+  <h1>Huizen in Amsterdam</h1>
 
-<ul class="listing">
-  {{#Objects}}
-    <li>
-      <a href="#" data-id="{{Id}}">
-        <img src="{{FotoMedium}}" alt="">
-        <p class="listing__address">
-          <span>{{Adres}}</span>
-          <span>{{Woonplaats}}</span>
-        </p>
-      </a>
-      <span class="listing__surface">{{Woonoppervlakte}} m<sup>2</sup></span>
-      <span>Prijs: &euro; {{Koopprijs}} {{Prijs.KoopAbbreviation}}</span>
-      <!-- <span>{{Soort-aanbod}}</span>
-      <span>Kamers: {{AantalKamers}}</span> -->
-    </li>
-  {{/Objects}}
-</ul>
+  <ul class="listing">
+    {{#Objects}}
+      <li class="listing__item">
+        <a href="#" data-id="{{Id}}" class="listing__photo">
+          <img src="{{Foto}}" srcset="{{FotoLarge}} 580w, {{FotoMedium}} 242w" alt="">
+        </a>
+        <a href="#" data-id="{{Id}}" class="listing__address">
+          <p>
+            <span class="listing__street">{{Adres}}</span>
+            <span class="listing__city">{{Woonplaats}}</span>
+          </p>
+        </a>
+        <span class="listing__price">&euro; {{Koopprijs}} {{Prijs.KoopAbbreviation}}</span>
+        <!-- <span class="listing__type">{{Soort-aanbod}}</span> -->
+        <ul class="listing__specs">
+          <li>{{Woonoppervlakte}} <span>m<sup>2</sup></span></li>
+          <li>{{AantalKamers}} <span>Kamers</span></li>
+        </ul>
+      </li>
+    {{/Objects}}
+  </ul>
+</main>
